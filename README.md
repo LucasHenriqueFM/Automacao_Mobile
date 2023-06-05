@@ -14,6 +14,8 @@ Para executar a automação mobile, é necessário fazer algumas instalações e
 - Android SDK Tools Setup
 - Robot Framework
 
+obs: https://www.notion.so/Instala-es-825bd41455bd4d598fa934dc88e1d1c6, esse link é um passo a passo de como instalar o Navegador, VSCode, Python, Chromedriver e o Robot Framework
+
 Aplicativo Senff:
 Para instalar o aplicativo Senff, siga as instruções:
 1. Baixe o aplicativo Senff do site "https://senff-clientes.softonic.com.br/android".
