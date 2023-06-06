@@ -7,12 +7,12 @@ Para executar a automação mobile, é necessário fazer algumas instalações e
 - Appium
 - Genymotion
 - Python
-- Google Chrome
-- Chromedriver (com a mesma versão do Google Chrome)
+- [Google Chrome](https://apricot-myth-659.notion.site/Instala-es-825bd41455bd4d598fa934dc88e1d1c6#964c1a00f020413ea6b259e11d85a44c)
+- [Chromedriver](https://apricot-myth-659.notion.site/Instala-es-825bd41455bd4d598fa934dc88e1d1c6#e67fc24a9e5341f98e424ee4fcd816df) (com a mesma versão do Google Chrome)
 - Instalar o Chromedriver no diretório Scripts do Python: `AppData\Local\Programs\Python\Python310\Scripts`
-- VSCode
+- [VSCode](https://apricot-myth-659.notion.site/Instala-es-825bd41455bd4d598fa934dc88e1d1c6#3a00b75cb9e74ff5b243f89efa97b30e)
 - Android SDK Tools Setup
-- Robot Framework
+- [Robot Framework](https://apricot-myth-659.notion.site/Instala-es-825bd41455bd4d598fa934dc88e1d1c6#4bf71396226642a682c79079769dcb00)
 
 **observação**: [Clique aqui](https://apricot-myth-659.notion.site/Instala-es-825bd41455bd4d598fa934dc88e1d1c6?pvs=4) para acessar um passo a passo de como instalar o Navegador Chrome, VSCode, Python, Chromedriver e o Robot Framework
 
