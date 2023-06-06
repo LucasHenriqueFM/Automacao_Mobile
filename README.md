@@ -14,7 +14,7 @@ Para executar a automação mobile, é necessário fazer algumas instalações e
 - Android SDK Tools Setup
 - Robot Framework
 
-obs: https://www.notion.so/Instala-es-825bd41455bd4d598fa934dc88e1d1c6, esse link é um passo a passo de como instalar o Navegador, VSCode, Python, Chromedriver e o Robot Framework
+**observação**: [Clique aqui](https://apricot-myth-659.notion.site/Instala-es-825bd41455bd4d598fa934dc88e1d1c6?pvs=4) para acessar um passo a passo de como instalar o Navegador Chrome, VSCode, Python, Chromedriver e o Robot Framework
 
 Aplicativo Senff:
 Para instalar o aplicativo Senff, siga as instruções:
@@ -42,4 +42,4 @@ Depois de ter feito todas as instalações e configurações, siga as etapas aba
 2. Inicie o dispositivo selecionado no Genymotion.
 3. Execute o seguinte comando no terminal: `robot -d .\Logs -i Funcional .\Tests\testeAppium.robot`
 
-Observação: Certifique-se de que o dispositivo esteja corretamente configurado e conectado antes de executar a automação.
+**Observação**: Certifique-se de que o dispositivo esteja corretamente configurado e conectado antes de executar a automação.
