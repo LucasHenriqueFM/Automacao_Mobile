@@ -1,138 +1,50 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 6.0.2 (Python 3.11.1 on win32)" generated="20230501 17:39:44.914" rpa="false" schemaversion="3">
-<suite id="s1" name="testeAppium" source="C:\Users\lucas.meneses\Documents\Projeto Lucas Henrique\Desafios\Desafio_2_mobile\Tests\testeAppium.robot">
-<kw name="Abrir o aplicativo Senff" library="teste" type="SETUP">
-<kw name="Open Application" library="AppiumLibrary">
+<robot generator="Robot 7.2.2 (Python 3.13.2 on win32)" generated="2025-02-25T16:43:42.461835" rpa="false" schemaversion="5">
+<suite id="s1" name="testeAppium" source="C:\Users\lucas\OneDrive\Documents\git\Automacao_Mobile\Tests\testeAppium.robot">
+<kw name="Abrir o aplicativo Senff" owner="teste" type="SETUP">
+<kw name="Open Application" owner="AppiumLibrary">
 <arg>http://localhost:4723/wd/hub</arg>
 <arg>platformName=Android</arg>
-<arg>platformVersion=8.0</arg>
-<arg>deviceName=192.168.111.102:5555</arg>
+<arg>platformVersion=15</arg>
+<arg>deviceName=appPackage</arg>
 <arg>appPackage=br.inf.rmi.senff</arg>
-<arg>appActivity=br.inf.rmi.senff.application.splash.view.activitys.Splash</arg>
+<arg>appActivity=.application.version.ForceUpdateActivity</arg>
 <doc>Opens a new application to given Appium server.
 Capabilities of appium server, Android and iOS,
-Please check https://github.com/appium/appium/blob/master/docs/en/writing-running-appium/server-args.md
+Please check https://appium.io/docs/en/2.1/cli/args/
 | *Option*            | *Man.* | *Description*     |
 | remote_url          | Yes    | Appium server url |
 | alias               | no     | alias             |
 | strict_ssl          | No     | allows you to send commands to an invalid certificate host like a self-signed one. |</doc>
-<status status="PASS" starttime="20230501 17:39:45.083" endtime="20230501 17:39:57.712"/>
+<status status="PASS" start="2025-02-25T16:43:42.643478" elapsed="8.113795"/>
 </kw>
-<status status="PASS" starttime="20230501 17:39:45.083" endtime="20230501 17:39:57.712"/>
+<status status="PASS" start="2025-02-25T16:43:42.643081" elapsed="8.114322"/>
 </kw>
 <test id="s1-t1" name="Cenário 01: Aceitações" line="10">
-<kw name="Dado que estou com a janela de Permissões aberta do aplicativo da Senff" library="teste">
-<kw name="Element Should Be Visible" library="AppiumLibrary">
-<arg>br.inf.rmi.senff:id/tvTitle</arg>
-<doc>Verifies that element identified with locator is visible.</doc>
-<msg timestamp="20230501 17:39:58.240" level="INFO">criteria is br.inf.rmi.senff:id/tvTitle</msg>
-<status status="PASS" starttime="20230501 17:39:57.713" endtime="20230501 17:39:58.240"/>
+<kw name="Dado que estou com a janela de Permissões aberta do aplicativo da Senff" owner="teste">
+<kw name="Element Should Contain Text" owner="AppiumLibrary">
+<msg time="2025-02-25T16:43:50.758263" level="FAIL">Keyword 'AppiumLibrary.Element Should Contain Text' expected 2 to 3 arguments, got 1.</msg>
+<arg>Para sua segurança, uma atualização obrigatória deve ser feita</arg>
+<doc>Verifies element identified by ``locator`` contains text ``expected``.</doc>
+<status status="FAIL" start="2025-02-25T16:43:50.758159" elapsed="0.000144">Keyword 'AppiumLibrary.Element Should Contain Text' expected 2 to 3 arguments, got 1.</status>
 </kw>
-<status status="PASS" starttime="20230501 17:39:57.713" endtime="20230501 17:39:58.240"/>
-</kw>
-<kw name="Quando clicar no botão &quot;Entendi&quot;" library="teste">
-<kw name="Wait Until Element Is Visible" library="AppiumLibrary">
-<arg>id=br.inf.rmi.senff:id/buttonOk</arg>
-<arg>timeout=10s</arg>
-<doc>Waits until element specified with `locator` is visible.</doc>
-<msg timestamp="20230501 17:39:58.290" level="INFO">criteria is br.inf.rmi.senff:id/buttonOk</msg>
-<status status="PASS" starttime="20230501 17:39:58.241" endtime="20230501 17:39:58.290"/>
-</kw>
-<kw name="Click Element" library="AppiumLibrary">
-<arg>id=br.inf.rmi.senff:id/buttonOk</arg>
-<doc>Click element identified by `locator`.</doc>
-<msg timestamp="20230501 17:39:58.291" level="INFO">Clicking element 'id=br.inf.rmi.senff:id/buttonOk'.</msg>
-<msg timestamp="20230501 17:39:58.344" level="INFO">criteria is br.inf.rmi.senff:id/buttonOk</msg>
-<status status="PASS" starttime="20230501 17:39:58.290" endtime="20230501 17:39:58.344"/>
-</kw>
-<status status="PASS" starttime="20230501 17:39:58.241" endtime="20230501 17:39:58.344"/>
-</kw>
-<kw name="E clicar em &quot;ALLOW&quot;" library="teste">
-<kw name="Wait Until Element Is Visible" library="AppiumLibrary">
-<arg>id=com.android.packageinstaller:id/permission_allow_button</arg>
-<arg>timeout=10s</arg>
-<doc>Waits until element specified with `locator` is visible.</doc>
-<msg timestamp="20230501 17:39:59.145" level="INFO">criteria is com.android.packageinstaller:id/permission_allow_button</msg>
-<status status="PASS" starttime="20230501 17:39:58.345" endtime="20230501 17:39:59.145"/>
-</kw>
-<kw name="Click Element" library="AppiumLibrary">
-<arg>id=com.android.packageinstaller:id/permission_allow_button</arg>
-<doc>Click element identified by `locator`.</doc>
-<msg timestamp="20230501 17:39:59.146" level="INFO">Clicking element 'id=com.android.packageinstaller:id/permission_allow_button'.</msg>
-<msg timestamp="20230501 17:39:59.187" level="INFO">criteria is com.android.packageinstaller:id/permission_allow_button</msg>
-<status status="PASS" starttime="20230501 17:39:59.145" endtime="20230501 17:39:59.188"/>
-</kw>
-<status status="PASS" starttime="20230501 17:39:58.345" endtime="20230501 17:39:59.188"/>
-</kw>
-<kw name="Então deve entrar no aplicativo da Senff" library="teste">
-<kw name="Wait Until Element Is Visible" library="AppiumLibrary">
-<arg>id=br.inf.rmi.senff:id/content_front</arg>
-<arg>timeout=10s</arg>
-<doc>Waits until element specified with `locator` is visible.</doc>
-<msg timestamp="20230501 17:40:01.313" level="INFO">criteria is br.inf.rmi.senff:id/content_front
-criteria is br.inf.rmi.senff:id/content_front
-criteria is br.inf.rmi.senff:id/content_front</msg>
-<status status="PASS" starttime="20230501 17:39:59.188" endtime="20230501 17:40:01.313"/>
-</kw>
-<status status="PASS" starttime="20230501 17:39:59.188" endtime="20230501 17:40:01.313"/>
+<status status="FAIL" start="2025-02-25T16:43:50.757928" elapsed="0.000476">Keyword 'AppiumLibrary.Element Should Contain Text' expected 2 to 3 arguments, got 1.</status>
 </kw>
 <tag>Funcional</tag>
-<status status="PASS" starttime="20230501 17:39:57.712" endtime="20230501 17:40:01.314"/>
-</test>
-<test id="s1-t2" name="Cenário 02: Pedir um cartão de débito" line="17">
-<kw name="Dado que estou com o aplicativo da Senff aberto" library="teste">
-<kw name="Wait Until Element Is Visible" library="AppiumLibrary">
-<arg>id=br.inf.rmi.senff:id/content_front</arg>
-<arg>timeout=10s</arg>
-<doc>Waits until element specified with `locator` is visible.</doc>
-<msg timestamp="20230501 17:40:01.372" level="INFO">criteria is br.inf.rmi.senff:id/content_front</msg>
-<status status="PASS" starttime="20230501 17:40:01.317" endtime="20230501 17:40:01.372"/>
-</kw>
-<status status="PASS" starttime="20230501 17:40:01.317" endtime="20230501 17:40:01.372"/>
-</kw>
-<kw name="Quando clicar em &quot;Pedir Cartão de Débito&quot;" library="teste">
-<kw name="Click Element" library="AppiumLibrary">
-<arg>id=br.inf.rmi.senff:id/button_do_card</arg>
-<doc>Click element identified by `locator`.</doc>
-<msg timestamp="20230501 17:40:01.375" level="INFO">Clicking element 'id=br.inf.rmi.senff:id/button_do_card'.</msg>
-<msg timestamp="20230501 17:40:01.418" level="INFO">criteria is br.inf.rmi.senff:id/button_do_card</msg>
-<status status="PASS" starttime="20230501 17:40:01.374" endtime="20230501 17:40:01.420"/>
-</kw>
-<status status="PASS" starttime="20230501 17:40:01.373" endtime="20230501 17:40:01.420"/>
-</kw>
-<kw name="E ser direcionado a página web" library="teste">
-<kw name="Wait Until Element Is Visible" library="AppiumLibrary">
-<arg>id=org.chromium.webview_shell:id/url_field</arg>
-<doc>Waits until element specified with `locator` is visible.</doc>
-<msg timestamp="20230501 17:40:03.761" level="INFO">criteria is org.chromium.webview_shell:id/url_field</msg>
-<status status="PASS" starttime="20230501 17:40:01.421" endtime="20230501 17:40:03.761"/>
-</kw>
-<status status="PASS" starttime="20230501 17:40:01.421" endtime="20230501 17:40:03.761"/>
-</kw>
-<kw name="Então deve entrar no site &quot;meucartao.senff&quot;" library="teste">
-<kw name="Wait Until Element Is Visible" library="AppiumLibrary">
-<arg>id=org.chromium.webview_shell:id/container</arg>
-<doc>Waits until element specified with `locator` is visible.</doc>
-<msg timestamp="20230501 17:40:03.847" level="INFO">criteria is org.chromium.webview_shell:id/container</msg>
-<status status="PASS" starttime="20230501 17:40:03.762" endtime="20230501 17:40:03.847"/>
-</kw>
-<status status="PASS" starttime="20230501 17:40:03.762" endtime="20230501 17:40:03.847"/>
-</kw>
-<tag>Funcional</tag>
-<status status="PASS" starttime="20230501 17:40:01.315" endtime="20230501 17:40:03.847"/>
+<status status="FAIL" start="2025-02-25T16:43:50.757479" elapsed="0.001103">Keyword 'AppiumLibrary.Element Should Contain Text' expected 2 to 3 arguments, got 1.</status>
 </test>
 <doc>Essa suíte testa o aplicativo da Senff</doc>
-<status status="PASS" starttime="20230501 17:39:44.915" endtime="20230501 17:40:03.848"/>
+<status status="FAIL" start="2025-02-25T16:43:42.463198" elapsed="8.295987"/>
 </suite>
 <statistics>
 <total>
-<stat pass="2" fail="0" skip="0">All Tests</stat>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
 </total>
 <tag>
-<stat pass="2" fail="0" skip="0">Funcional</stat>
+<stat pass="0" fail="1" skip="0">Funcional</stat>
 </tag>
 <suite>
-<stat pass="2" fail="0" skip="0" id="s1" name="testeAppium">testeAppium</stat>
+<stat name="testeAppium" id="s1" pass="0" fail="1" skip="0">testeAppium</stat>
 </suite>
 </statistics>
 <errors>

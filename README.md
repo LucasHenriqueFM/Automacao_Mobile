@@ -4,17 +4,15 @@ Para executar a automação mobile, é necessário fazer algumas instalações e
 
 ### Instalações
 
-- Appium
-- Genymotion
-- Python
-- [Google Chrome](https://apricot-myth-659.notion.site/Instala-es-825bd41455bd4d598fa934dc88e1d1c6#964c1a00f020413ea6b259e11d85a44c)
-- [Chromedriver](https://apricot-myth-659.notion.site/Instala-es-825bd41455bd4d598fa934dc88e1d1c6#e67fc24a9e5341f98e424ee4fcd816df) (com a mesma versão do Google Chrome)
-- Instalar o Chromedriver no diretório Scripts do Python: `AppData\Local\Programs\Python\Python310\Scripts`
-- [VSCode](https://apricot-myth-659.notion.site/Instala-es-825bd41455bd4d598fa934dc88e1d1c6#3a00b75cb9e74ff5b243f89efa97b30e)
-- Android SDK Tools Setup
+- [Appium](https://github.com/appium/appium-desktop/releases)
+- [Python](https://www.python.org/downloads/)
+- [Java JDK.zip](https://www.oracle.com/java/technologies/downloads/#jdk23-windows)
+- [Node.js](https://nodejs.org/en/download)
+- [Android SDK](https://developer.android.com/tools/releases/platform-tools?hl=pt-br)
+- [Android Studio](https://developer.android.com/studio?gad_source=1&gclid=CjwKCAiAzvC9BhADEiwAEhtlN2K4j0DeroIRPIMww2ZtA5A2Eb2wfObihPd2BvX9j0J8JZ036_qoCxoCJCAQAvD_BwE&gclsrc=aw.ds&hl=pt-br)
 - [Robot Framework](https://apricot-myth-659.notion.site/Instala-es-825bd41455bd4d598fa934dc88e1d1c6#4bf71396226642a682c79079769dcb00)
-
-**observação**: [Clique aqui](https://apricot-myth-659.notion.site/Instala-es-825bd41455bd4d598fa934dc88e1d1c6?pvs=4) para acessar um passo a passo de como instalar o Navegador Chrome, VSCode, Python, Chromedriver e o Robot Framework
+- [AppiumLibrary]
+- [Especionar elementos](https://github.com/appium/appium-inspector/releases)
 
 Aplicativo Senff:
 Para instalar o aplicativo Senff, siga as instruções:
@@ -22,18 +20,26 @@ Para instalar o aplicativo Senff, siga as instruções:
 2. Transfira o aplicativo baixado para o celular e instale-o.
 
 ### Configurações
-
-- Variáveis de ambiente:
-    - Nome da Variável: ANDROID_HOME
-    - Valor: Local onde o Android SDK foi instalado
 - Em Path, adicione os seguintes valores:
     - Diretório do Android SDK
     - Diretório do Genymotion: `C:\ProgramData\Microsoft\Windows\Start Menu\Programs\Genymotion`
     - Appium: Em "Editar Configurações", coloque o diretório onde o Android JDK foi instalado. O JAVA_HOME é o diretório do JDK (por exemplo, `C:\Program Files\Java\jdk1.8.0_351`)
-- Genymotion: O Genymotion não precisa de configuração adicional. Basta instalar um dispositivo novo. Para evitar erros, instale o celular Google Nexus 7 com a versão do Android 8.0.
 - Código: No código, faça duas alterações:
     - Escolha a `platformVersion` com a versão instalada no celular, conforme exibido no Genymotion.
     - Insira o `deviceName`. Com o celular conectado, vá nas configurações gerais do celular ou encontre-o no topo do celular, por exemplo: `deviceName=192.168.111.102:5555`
+
+### Configurações
+- **Variável de ambiente para Java:**
+    - Criar uma variável nova chamada JAVA_HOME e adicionar o diretorio da pasta JDK.
+    - Adicionar pasta bin na variável "Path", basta clicar na pasta "Path" e procurar o diretorio da pasta "java\jdk-23.0.2\bin".
+
+- **Variável de ambiete para Android SDK**
+    - Extrair o arquio de download, e colar ele na pasta "Arquivos de Pogramas"
+    - Criar uma nova variável com o nome "ANDROID_HOME", e com o valor sendo diretorio da pasta SDK "\platform-tools"
+    - Na variável "Path" adicionar o mesmo caminho
+
+- **Confirações do Appium**
+    - c
 
 ### Execução
 
